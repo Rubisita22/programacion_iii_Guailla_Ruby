@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia - Transporte Público</title>
+</head>
+<body>
+    <header>
+        <h1>Centro de Control Multimedia</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Anuncio de Paradas (Audio)</h2>
+            <audio id="audio_unidad" src="music_mp_guailla_ruby/anuncio_parada.mp3" controls loop>
+                Tu navegador no soporta el elemento de audio HTML5.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Cámara de Seguridad en Vivo (Video)</h2>
+            <video src="videos_mp_guailla_ruby/camara_unidad_01.mp4" controls width="500">
+                Tu navegador no soporta el elemento de video HTML5.
+            </video>
+        </section>
+
+        <section>
+            <h1>Monitoreo de Unidades</h1>
+            <h2>Información del Sistema de Transporte</h2>
+            
+            <iframe src="https://movilidadquito.com/"
+                    width="600" 
+                    height="350" 
+                    title="Mapa de rutas en tiempo real" 
+                    loading="lazy">
+            </iframe>
+
+            <br><br>
+
+        
+            <iframe src="11_formulario_transporte_mp_guailla_ruby.html"
+                    width="600" 
+                    height="350" 
+                    title="Formulario de Registro de Unidades" 
+                    loading="lazy">
+            </iframe>
+        </section>
+    </main>
+</body>
+</html>
