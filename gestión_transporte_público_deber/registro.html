@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Unidades</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="box_model">
+    <header id="cabecera" title="Portal de Gestión de Transporte Público">
+        <h1 id="titulo-principal">Registro de Unidades y Operadores</h1>
+        <p>Movilidad eficiente para una ciudad mejor</p>
+    </header>
+
+    <nav id="menu" aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="conductores.html">Conductores</a></li>
+            <li><a href="rutas.html">Rutas</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="registro.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido">
+        <form action="#" method="post" id="registro-unidades">
+            <fieldset>
+                <legend>Datos del Vehículo</legend>
+                <label for="placa">Placa:</label>
+                <input type="text"
+                       id="placa"
+                       name="placa"
+                       placeholder="ABC-1234"
+                       maxlength="8"
+                       required>
+                <br><br>
+                <label for="tipo">Tipo de Unidad:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecciona tipo</option>
+                    <option value="urbano">Bus Urbano</option>
+                    <option value="brt">Corredor BRT</option>
+                </select>
+                <br><br>
+                <label for="fecha">Fecha de registro:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Características</legend>
+                <p>Turno de operación:</p>
+                <input type="radio" id="manana" name="turno" value="manana" required>
+                <label for="manana">Mañana</label>
+                <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde">Tarde</label>
+                <input type="radio" id="noche" name="turno" value="noche">
+                <label for="noche">Noche</label>
+                <br><br>
+                <label for="capacidad">Capacidad de pasajeros (20 a 200):</label>
+                <input type="number"
+                       id="capacidad"
+                       name="capacidad"
+                       min="20"
+                       max="200"
+                       value="80">
+                <p>Equipamiento:</p>
+                <input type="checkbox" id="gps" name="equipo" value="gps">
+                <label for="gps">Rastreo GPS</label>
+                <br>
+                <input type="checkbox" id="camaras" name="equipo" value="camaras">
+                <label for="camaras">Cámaras de seguridad</label>
+                <br>
+                <input type="checkbox" id="recaudo" name="equipo" value="recaudo">
+                <label for="recaudo">Sistema de recaudo</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Observaciones</legend>
+                <label for="observaciones">Observaciones operativas:</label>
+                <br>
+                <textarea id="observaciones"
+                          name="observaciones"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe el estado de la unidad..."></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Guardar Registro</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </main>
+
+    <footer id="contacto">
+        <p><small>Gestión de Transporte Público. Todos los derechos reservados.</small></p>
+        <p>Contacto: <a href="mailto:transporte@ejemplo.com">transporte@ejemplo.com</a></p>
+    </footer>
+</div>
+</body>
+</html>
