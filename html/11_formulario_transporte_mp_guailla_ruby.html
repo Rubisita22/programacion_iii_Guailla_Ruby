@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Registro de operaciones</title>
+</head>
+<body>
+    <header>
+        <h1>Centro de Gestión de Transporte Público</h1>
+        <p>Registro de operaciones de la flota</p>
+    </header>
+    <hr>
+    <main>
+        <form action="#"
+              method="get"
+              id="registro-misiones">
+            <fieldset>
+                <legend>Información de la ruta</legend>
+                <label for="codigo">
+                    Código de unidad:
+                </label>
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="BUS-001"
+                       maxlength="10"
+                       required>
+                <br><br>
+                <label for="responsable">
+                    Conductor asignado:
+                </label>
+                <select id="responsable"
+                        name="responsable"
+                        required>
+                    <option value="">
+                        Selecciona un conductor
+                    </option>
+                    <option value="juan">
+                        Juan Pérez
+                    </option>
+                    <option value="maria">
+                        María López
+                    </option>
+                    <option value="carlos">
+                        Carlos Gómez
+                    </option>
+                </select>
+                <br><br>
+                <label for="planeta">
+                    Estación de destino:
+                </label>
+                <input type="text"
+                       id="planeta"
+                       name="planeta"
+                       placeholder="Ej. Terminal Norte"
+                       required>
+                <br><br>
+                <label for="fecha">
+                    Fecha del recorrido:
+                </label>
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Características</legend>
+                <p>Prioridad del servicio:</p>
+                <input type="radio"
+                       id="alta"
+                       name="prioridad"
+                       value="alta"
+                       required>
+                <label for="alta">Alta</label>
+                <input type="radio"
+                       id="media"
+                       name="prioridad"
+                       value="media">
+
+                <label for="media">Media</label>
+                <input type="radio"
+                       id="baja"
+                       name="prioridad"
+                       value="baja">
+                <label for="baja">Baja</label>
+                <br><br>
+                <label for="riesgo">
+                    Nivel de tráfico (1 a 10):
+                </label>
+                <input type="number"
+                       id="riesgo"
+                       name="riesgo"
+                       min="1"
+                       max="10"
+                       value="5">
+                <p>Equipamiento necesario:</p>
+                <input type="checkbox"
+                       id="nave"
+                       name="recursos"
+                       value="nave">
+                <label for="nave">
+                    Rastreo GPS
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="droides"
+                       name="recursos"
+                       value="droides">
+                <label for="droides">
+                    Cámaras de seguridad
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="equipo"
+                       name="recursos"
+                       value="equipo">
+                <label for="equipo">
+                    Sistema de recaudo
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Descripción de la ruta</legend>
+                <label for="descripcion">
+                    Observaciones operativas:
+                </label>
+                <br>
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe el recorrido..."
+                          required></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">
+                Registrar unidad
+            </button>
+            <button type="reset">
+                Limpiar datos
+            </button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            <small>
+                Gestión de Transporte - 2026
+            </small>
+        </p>
+    </footer>
+</body>
+</html>

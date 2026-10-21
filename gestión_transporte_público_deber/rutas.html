@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Rutas y Frecuencias</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="box_model">
+    <header id="cabecera" title="Portal de Gestión de Transporte Público">
+        <h1 id="titulo-principal">Control de Rutas y Recorridos</h1>
+        <p>Movilidad eficiente para una ciudad mejor</p>
+    </header>
+
+    <nav id="menu" aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="conductores.html">Conductores</a></li>
+            <li><a href="rutas.html">Rutas</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="registro.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido">
+        <h2>Rutas Operativas</h2>
+        <table id="rutas_transporte" border="1">
+            <caption>Programación de Salidas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Ruta</th>
+                    <th scope="col">Origen</th>
+                    <th scope="col">Destino</th>
+                    <th scope="col">Frecuencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ruta 1</td>
+                    <td>Terminal Norte</td>
+                    <td>Terminal Sur</td>
+                    <td>10 min</td>
+                </tr>
+                <tr>
+                    <td>Ruta 2</td>
+                    <td>Centro Histórico</td>
+                    <td>Estación Central</td>
+                    <td>15 min</td>
+                </tr>
+                <tr>
+                    <td>Ruta 3</td>
+                    <td>Estación Central</td>
+                    <td>Terminal Norte</td>
+                    <td>12 min</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="3">Total de rutas</th>
+                    <td>3</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Mapa de rutas</h2>
+        <figure>
+            <img src="imagenes/mapa_rutas.png"
+                 alt="Mapa de rutas del sistema de transporte"
+                 width="600"
+                 loading="eager">
+            <figcaption>Recorridos de las rutas operativas</figcaption>
+        </figure>
+
+        <h2>¿Cómo se definen las frecuencias?</h2>
+        <p>
+            Se analiza la demanda de pasajeros por hora y por zona. En horas pico se reducen los intervalos entre
+            unidades y en horas de baja demanda se amplían para optimizar la flota.
+        </p>
+    </main>
+
+    <footer id="contacto">
+        <p><small>Gestión de Transporte Público. Todos los derechos reservados.</small></p>
+        <p>Contacto: <a href="mailto:transporte@ejemplo.com">transporte@ejemplo.com</a></p>
+    </footer>
+</div>
+</body>
+</html>

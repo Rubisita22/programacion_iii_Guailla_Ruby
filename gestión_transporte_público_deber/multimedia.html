@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia - Monitoreo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="box_model">
+    <header id="cabecera" title="Portal de Gestión de Transporte Público">
+        <h1 id="titulo-principal">Centro de Control Multimedia</h1>
+        <p>Movilidad eficiente para una ciudad mejor</p>
+    </header>
+
+    <nav id="menu" aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="conductores.html">Conductores</a></li>
+            <li><a href="rutas.html">Rutas</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="registro.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido">
+        <section>
+            <h2>Anuncio de Paradas (Audio)</h2>
+            <audio id="audio_unidad" src="audios/anuncio_parada.mp3" controls loop>
+                Tu navegador no soporta el elemento de audio HTML5.
+            </audio>
+
+            <h2>Alerta de Servicio (Audio)</h2>
+            <audio id="audio_alerta" src="audios/alerta_servicio.mp3" controls>
+                Tu navegador no soporta el elemento de audio HTML5.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Cámara de Seguridad en Vivo (Video)</h2>
+            <video src="videos/camara_unidad_01.mp4" controls width="500">
+                Tu navegador no soporta el elemento de video HTML5.
+            </video>
+        </section>
+
+        <section>
+            <h2>Información del Sistema de Transporte</h2>
+            <iframe src="https://movilidadquito.com/"
+                    width="600"
+                    height="350"
+                    title="Información de movilidad"
+                    loading="lazy">
+            </iframe>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p><small>Gestión de Transporte Público. Todos los derechos reservados.</small></p>
+        <p>Contacto: <a href="mailto:transporte@ejemplo.com">transporte@ejemplo.com</a></p>
+    </footer>
+</div>
+</body>
+</html>
