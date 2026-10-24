@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Galáctico</title>
+    <link rel="stylesheet" href="10_visibility.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portal Galáctico</h1>
+        <nav>
+            <a href="#jedi">Jedi</a>
+            <a href="#sith">Sith</a>
+            <a href="#rebelion">Rebelión</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Misiones</h2>
+            <p>Misión 1: Coruscant</p>
+            <p class="secreta">Misión 2: Información reservada</p>
+            <p>Misión 3: Tatooine</p>
+        </section>
+
+        <section id="jedi">
+            <h2>Academia Jedi</h2>
+            
+            <h3>Uso de propiedad position: static / relative</h3>
+            <div class="caja">Obi-Wan Kenobi</div>
+            <div class="caja">Luke Skywalker</div>
+            <div class="caja especial">Maestro Yoda</div>
+
+            <h3>Uso de propiedad position: absolute</h3>
+            <div class="tarjeta-relativa" id="sith">
+                <span class="etiqueta">SITH</span>
+                <h2>Darth Vader</h2>
+                <p>Lord Sith del Imperio Galáctico</p>
+            </div>
+
+            <h3>Uso de la propiedad position: fixed</h3>
+            <p>La orden Jedi protege la paz en la galaxia</p>
+            <p>Los Jedi estudian el lado luminoso de la Fuerza</p>
+            <p>La formación requiere años de disciplina</p>
+        </section>
+
+        <section id="rebelion">
+            <h2>La Alianza Rebelde</h2>
+            <p>La Rebelión lucha contra el Imperio para restaurar la República</p>
+        </section>
+
+        <a class="boton-fijo" href="https://www.starwars.com" target="_blank">Mayor información</a>
+    </main>
+
+</body>
+</html>

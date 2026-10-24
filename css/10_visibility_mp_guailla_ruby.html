@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Transporte Público</title>
+    <link rel="stylesheet" href="10_visibility_mp_guailla_ruby.css">
+</head>
+<body>
+
+    <header>
+        <h1>Control de Transporte Urbano</h1>
+        <nav>
+            <a href="#rutas">Rutas</a>
+            <a href="#unidades">Unidades</a>
+            <a href="#reportes">Reportes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Mantenimiento de Unidades</h2>
+            <p>Unidad A-102: Mantenimiento completado</p>
+            <p class="secreta">Unidad B-205: Historial restringido (En inspección)</p>
+            <p>Unidad C-404: Mantenimiento pendiente</p>
+        </section>
+
+        <section id="unidades">
+            <h2>Gestión de Flota</h2>
+            
+            <h3>Posicionamiento Estático y Relativo</h3>
+            <div class="caja">Unidad A-102 - En Servicio</div>
+            <div class="caja">Unidad B-205 - En Servicio</div>
+            <div class="caja especial">Unidad C-404 - Desviada de Ruta</div>
+
+            <h3>Posicionamiento Absoluto</h3>
+            <div class="tarjeta-relativa" id="rutas">
+                <span class="etiqueta">EN TALLER</span>
+                <h2>Unidad D-508</h2>
+                <p>Revisión técnica de motor y frenos</p>
+            </div>
+
+            <h3>Monitoreo Continuo</h3>
+            <p>El centro de control monitorea la velocidad de las unidades</p>
+            <p>Se emiten alertas automáticas por demoras en paradas</p>
+            <p>Los choferes reportan novedades en tiempo real</p>
+        </section>
+
+        <section id="reportes">
+            <h2>Reportes del Sistema</h2>
+            <p>Generación de reportes diarios de pasajes y rutas de mayor demanda</p>
+        </section>
+
+        <a class="boton-fijo" href="https://www.ecu911.gob.ec" target="_blank">Soporte de Emergencia</a>
+    </main>
+
+</body>
+</html>

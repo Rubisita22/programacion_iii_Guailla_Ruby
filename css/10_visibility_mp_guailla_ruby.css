@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background-color: #f1f5f9;
+    color: #334155;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0 0 0;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+header h1 {
+    color: #38bdf8;
+    margin: 0 0 15px 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 15px;
+    background-color: #1e293b;
+    text-align: center;
+}
+
+nav a {
+    color: #38bdf8;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+section {
+    padding: 20px 30px; 
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.secreta {
+    visibility: hidden; /* Mantiene el espacio en el diseño pero oculta el contenido */
+}
+
+.caja {
+    position: static;
+    background-color: #0284c7;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.especial {
+    position: relative;
+    top: 15px;
+    left: 30px; 
+    background-color: #eab308;
+    color: #0f172a;
+    font-weight: bold;
+}
+
+.tarjeta-relativa {
+    position: relative; 
+    width: 320px;
+    padding: 20px;
+    border: 2px solid #dc2626;
+    background-color: #ffffff;
+    color: #1e293b;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-relativa h2 {
+    margin-top: 10px;
+    color: #991b1b;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc2626;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.boton-fijo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background-color: #0284c7;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.boton-fijo:hover {
+    background-color: #0369a1;
+}

@@ -1,0 +1,113 @@
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 5px;
+}
+
+.texto-jedi {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0369a1;
+}
+
+.texto-imperio {
+    font-family: 'Courier New', Courier, monospace;
+    color: #b91c1c;
+}
+
+.texto-40px {
+    font-size: 40px;
+}
+
+.texto-20px {
+    font-size: 20px;
+}
+
+.texto-10px {
+    font-size: 10px;
+}
+
+.aprendiz {
+    font-weight: 300;
+}
+
+.caballero {
+    font-weight: 500;
+}
+
+.maestro {
+    font-weight: 800;
+}
+
+.estilo_letra_normal {
+    font-style: normal;
+}
+
+.estilo_letra_italica {
+    font-style: italic;
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.centro {
+    text-align: center;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.importante {
+    text-decoration: underline;
+    text-decoration-color: #0284c7;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+
+.cancelada {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+.link {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.titulo_mayuscula {
+    text-transform: uppercase;
+}
+
+.titulo_minuscula {
+    text-transform: lowercase;
+}
+
+.titulo_capitalizado {
+    text-transform: capitalize;
+}
+
+.espaciado_simple {
+    line-height: 1;
+}
+
+.espaciado_doble {
+    line-height: 2;
+}
+
+.espaciado_letras1 {
+    letter-spacing: 4px;
+}
+
+.espaciado_letras2 {
+    letter-spacing: 1px;
+}
