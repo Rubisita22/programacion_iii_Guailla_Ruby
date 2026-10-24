@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Transporte - CSS Grid</title>
+    <link rel="stylesheet" href="13_flexbox_grid_mp_guailla_ruby.css">
+</head>
+<body>
+    <h1>Estaciones Principales (Grid Simple)</h1>
+    <div class="contenedor">
+        <div class="unidad">Estación Norte</div>
+        <div class="unidad">Estación Central</div>
+        <div class="unidad">Estación Sur</div>
+    </div>
+
+    <h1>Monitoreo de Flota (4 Columnas - 1fr)</h1>
+    <div class="consejo">
+        <div class="unidad">Unidad A-101</div>
+        <div class="unidad">Unidad A-102</div>
+        <div class="unidad">Unidad A-103</div>
+        <div class="unidad">Unidad A-104</div>
+        <div class="unidad">Unidad B-201</div>
+        <div class="unidad">Unidad B-202</div>
+        <div class="unidad">Unidad B-203</div>
+        <div class="unidad">Unidad B-204</div>
+        <div class="unidad">Unidad C-301</div>
+        <div class="unidad">Unidad C-302</div>
+        <div class="unidad">Unidad C-303</div>
+        <div class="unidad">Unidad C-304</div>
+    </div>
+
+    <h1>Centro de Operaciones (Proporción 1fr 2fr 1fr)</h1>
+    <div class="operaciones">
+        <div class="operacion">Despacho</div>
+        <div class="operacion">Monitoreo GPS en Vivo</div>
+        <div class="operacion">Mantenimiento</div>
+    </div>
+
+    <h1>Niveles de Terminal (Filas con Altura Fija)</h1>
+    <div class="hangar">
+        <div>Nivel 1: Embarque de Pasajeros</div>
+        <div>Nivel 2: Estacionamiento de Flota</div>
+        <div>Nivel 3: Taller Mecánico</div>
+    </div>
+
+    <h1>Rutas Troncales (Filas y Columnas con Gaps)</h1>
+    <div class="flota">
+        <div>Troncal 1: Norte - Centro</div>
+        <div>Troncal 2: Sur - Centro</div>
+        <div>Troncal 3: Vías Expresas</div>
+        <div>Troncal 4: Ecovía Periférica</div>
+    </div>
+
+    <h1>Flota Completa (Función Repeat)</h1>
+    <div class="consejo2">
+        <div class="unidad">Bus 01</div>
+        <div class="unidad">Bus 02</div>
+        <div class="unidad">Bus 03</div>
+        <div class="unidad">Bus 04</div>
+        <div class="unidad">Bus 05</div>
+        <div class="unidad">Bus 06</div>
+        <div class="unidad">Bus 07</div>
+        <div class="unidad">Bus 08</div>
+        <div class="unidad">Bus 09</div>
+        <div class="unidad">Bus 10</div>
+        <div class="unidad">Bus 11</div>
+        <div class="unidad">Bus 12</div>
+        <div class="unidad">Bus 13</div>
+        <div class="unidad">Bus 14</div>
+        <div class="unidad">Bus 15</div>
+    </div>
+
+    <h1>Panel Adaptativo (Auto-fit & Minmax)</h1>
+    <div class="naves">
+        <div>Línea Cero</div>
+        <div>Ruta Alimentadora 1</div>
+        <div>Ruta Alimentadora 2</div>
+        <div>Circuito Nocturno</div>
+        <div>Expreso Aeropuerto</div>
+    </div>
+
+    <h1>Incidencias del Sistema (Grid Span)</h1>
+    <div class="misiones">
+        <div class="destacada">
+            Alerta Crítica: Cierre Temporal de Terminal Central
+        </div>
+        <div>Retraso Ruta Norte</div>
+        <div>Unidad C-404 en Taller</div>
+        <div>Desvío por Obras</div>
+        <div>Mantenimiento de Parada</div>
+    </div>
+</body>
+</html>

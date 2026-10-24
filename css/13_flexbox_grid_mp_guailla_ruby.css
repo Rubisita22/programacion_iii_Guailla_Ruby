@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    padding: 20px;
+}
+
+h1 {
+    color: #0f172a;
+    border-bottom: 2px solid #0284c7;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.contenedor {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+}
+
+.unidad {
+    padding: 20px;
+    background-color: #0284c7;
+    color: #ffffff;
+    border: 2px solid #38bdf8;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.consejo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+}
+
+.operaciones {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+}
+
+.operacion {
+    padding: 30px;
+    background-color: #0f172a;
+    color: #38bdf8;
+    border: 2px solid #0284c7;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hangar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 130px 90px;
+    gap: 10px;
+    padding: 20px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+}
+
+.hangar div {
+    padding: 20px;
+    background-color: #334155;
+    color: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.flota {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;
+    padding: 20px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+}
+
+.flota div {
+    padding: 30px;
+    background-color: #0369a1;
+    color: #ffffff;
+    border: 2px solid #7dd3fc;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.consejo2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+}
+
+.naves {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+}
+
+.naves div {
+    padding: 20px;
+    background-color: #16a34a;
+    color: #ffffff;
+    border: 2px solid #4ade80;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.misiones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: #0f172a;
+    border-radius: 8px;
+}
+
+.misiones div {
+    padding: 30px;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.destacada {
+    grid-column: span 2;
+    background-color: #dc2626 !important;
+    color: #ffffff !important;
+    border: 2px solid #fca5a5 !important;
+    text-align: center;
+    font-weight: bold;
+}

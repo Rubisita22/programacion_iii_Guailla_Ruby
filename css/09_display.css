@@ -1,18 +1,18 @@
 .personaje {
-    display: none;
+    display: block; 
     padding: 20px;
     margin-bottom: 10px;
-    color:white
+    color: white; 
 }
 
-.luke{
+.luke {
     background-color: #2563eb;
 }
 
-.yoda{
+.yoda {
     background-color: #15803d;
 }
 
-.vader{
+.vader {
     background-color: #991b1b;
 }

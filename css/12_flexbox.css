@@ -1,76 +1,108 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0b1020;
     color: white;
+    padding: 20px;
 }
 
-.contendor1{
+h1 {
+    color: gold;
+    border-bottom: 2px solid gold;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #93c5fd;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contenedor1 {
     display: flex;
     flex-direction: row;
     background-color: darkcyan;
     padding: 20px;
+    gap: 10px;
 }
-.contendor2{
+
+.contenedor2 {
     display: flex;
     flex-direction: row-reverse;
     background-color: darkcyan;
     padding: 20px;
+    gap: 10px;
 }
-.contendor3{
+
+.contenedor3 {
     display: flex;
     flex-direction: column;
     background-color: darkcyan;
     padding: 20px;
+    gap: 10px;
 }
-.contendor4{
+
+.contenedor4 {
     display: flex;
     flex-direction: column-reverse;
     background-color: darkcyan;
     padding: 20px;
+    gap: 10px;
 }
-.personaje{
+
+.personaje {
     background-color: #172033;
     padding: 20px;
     border: 2px solid gold;
 }
 
-.escuadrones1{
+/* Propiedades de justify-content */
+.escuadrones1 {
     display: flex;
     justify-content: space-between;
     background-color: darkkhaki;
     padding: 20px;
 }
-.escuadrones2{
+
+.escuadrones2 {
     display: flex;
     justify-content: flex-end;
     background-color: darkkhaki;
     padding: 20px;
+    gap: 10px;
 }
-.escuadrones3{
+
+.escuadrones3 {
     display: flex;
     justify-content: flex-start;
     background-color: darkkhaki;
     padding: 20px;
+    gap: 10px;
 }
-.escuadrones4{
+
+.escuadrones4 {
     display: flex;
     justify-content: center;
     background-color: darkkhaki;
     padding: 20px;
+    gap: 10px;
 }
-.escuadrones5{
+
+.escuadrones5 {
     display: flex;
     justify-content: space-around;
     background-color: darkkhaki;
     padding: 20px;
 }
-.escuadrones6{
+
+.escuadrones6 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: darkkhaki;
     padding: 20px;
 }
-.escuadron{
+
+.escuadron {
     background-color: #172033;
     padding: 20px;
     border: 2px solid white;

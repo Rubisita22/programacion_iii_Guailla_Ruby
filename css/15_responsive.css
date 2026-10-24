@@ -1,49 +1,74 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-
+    background-color: #0b1020;
+    color: #ffffff;
 }
+
+
 .portada {
     width: 100%;
     padding: 5vw;
-    background-color: #0B1010;
-    color: white;
+    background-color: #0b1010;
+    color: #ffffff;
+    text-align: center;
 }
 
-.portada h1{
+.portada h1 {
     font-size: 8vw;
-    color: #FACC15;
-    
+    color: #facc15;
+    margin: 0 0 10px 0;
 }
 
-.portada p{
-    font-size: 2vw;
-    color: #FACC15;
+.portada p {
+    font-size: 3vw;
+    color: #facc15;
+    margin: 0;
 }
-.bienvenida{
+
+
+.bienvenida {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
+    background-color: #172033;
+    text-align: center;
 }
 
-.historia{
+.bienvenida h2 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+}
+
+.bienvenida p {
+    font-size: 1.2rem;
+}
+
+.historia {
     width: 80%;
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-    font-size: 15px;
+    padding: 50px 30px;
+    text-align: center;
 }
 
-.historia h1{
-    font: 2.6rem;
+.historia h2 {
+    font-size: 2.6rem; 
+    color: #facc15;
 }
 
-.historia p{
-    font-size: 1rem;
+.historia p {
+    font-size: 1.1rem;
     line-height: 1.6;
+    max-width: 600px;
 }
