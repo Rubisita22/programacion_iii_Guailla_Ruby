@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Transporte - Introducción a JavaScript</title>
+    <script>
+        alert('¡Sistema de Control de Transporte Iniciado!');
+        console.log('Sistema cargado desde el encabezado de la página');
+    </script>
+</head>
+<body>
+    <h1>Incluir JavaScript en Sistema de Transporte</h1>
+    
+    <h2>Modo Inline (Eventos Directos)</h2>
+    
+    <!-- Evento onclick: alerta para despachar unidad -->
+    <button onclick="alert('¡Unidad A-102 despachada correctamente!')">
+        Despachar Unidad
+    </button>
+    <br><br>
+
+    <!-- Evento oninput: monitoreo en vivo de lo que escribe el usuario -->
+    <label for="buscar-ruta">Búsqueda en tiempo real:</label>
+    <input type="text"
+        id="buscar-ruta"
+        oninput="console.log('Buscando ruta:', this.value)"
+        placeholder="Ingrese número de ruta...">
+    <br><br>
+
+    <!-- Evento onchange: registra el valor al perder el foco -->
+    <label for="conductor">Asignar Conductor:</label>
+    <input type="text"
+        id="conductor"
+        onchange="console.log('Conductor asignado guardado:', this.value)"
+        placeholder="Nombre del conductor...">
+    <br><br>
+
+    <!-- Eventos onfocus y onblur: detectan entrada y salida del campo -->
+    <label for="observaciones">Observaciones de Flota:</label>
+    <input type="text"
+        id="observaciones"
+        onfocus="console.log('El operador está ingresando observaciones...')"
+        onblur="alert('¡Atención! Has salido del campo de observaciones')"
+        placeholder="Haz clic dentro y fuera...">
+
+    <!-- Archivo JS externo -->
+    <script src="01_incluir_mp_guailla_ruby.js"></script>
+</body>
+</html>
