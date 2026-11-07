@@ -23,35 +23,35 @@ let y = false;
 console.log("x AND y:", x && y);
 console.log("x OR y:", x || y);
 console.log("NOT x:", !x);
-console.log("NOT d:", !y);
+console.log("NOT y:", !y);
 
-console.log ("\nOperadores de Asignación");
+console.log("\nOperadores de Asignación");
 let c = 10;
 console.log("Valor inicial de c:", c);
 
-c += 5; // c = c + 5
+c += 5;
 console.log("Después de c += 5:", c);
 
-c -= 3; // c = c - 3
+c -= 3;
 console.log("Después de c -= 3:", c);
 
-c *= 2; // c = c * 2
+c *= 2;
 console.log("Después de c *= 2:", c);
 
-c /= 4; // c = c / 4
+c /= 4;
 console.log("Después de c /= 4:", c);
 
-c %= 3; // c = c % 3
+c %= 3;
 console.log("Después de c %= 3:", c);
 
 console.log("\nOperadores de Incremento y Decremento");
 let d = 10;
 console.log("Valor inicial de d:", d);
 
-d++; // Incremento
+d++;
 console.log("Después de d++:", d);
 
-d--; // Decremento
+d--;
 console.log("Después de d--:", d);
 
 console.log("\nOperadores de Concatenación");
@@ -65,8 +65,8 @@ console.log("Operadores de comparación estricta");
 let e = 10;
 let f = "10";
 
-console.log("e es estrictamente igual a f:", e === f); // false, porque compara valor y tipo
-console.log("e es estrictamente diferente de f:", e !== f); // true, porque compara valor y tipo
+console.log("e es estrictamente igual a f:", e === f);
+console.log("e es estrictamente diferente de f:", e !== f);
 
 console.log("operadores ternarios");
 let edad = 20;
@@ -85,15 +85,14 @@ console.log(`8 x ${5} = ${5 * 8}`);
 console.log(`9 x ${5} = ${5 * 9}`);
 console.log(`10 x ${5} = ${5 * 10}`);
 
-
 console.log("Tabla de División del 5");
-console.log(`5 x ${5} = ${5 / 5}`);
-console.log(`10 x ${5} = ${10 / 5}`);
-console.log(`15 x ${5} = ${15 / 5}`);
-console.log(`20 x ${5} = ${20 / 5}`);
-console.log(`25 x ${5} = ${25 / 5}`);
-console.log(`30 x ${5} = ${30 / 5}`);
-console.log(`35 x ${5} = ${35 / 5}`);
-console.log(`40 x ${5} = ${40 / 5}`);
-console.log(`45 x ${5} = ${45 / 5}`);
-console.log(`50  x ${5} = ${50 / 5}`);
+console.log(`5 / ${5} = ${5 / 5}`);
+console.log(`10 / ${5} = ${10 / 5}`);
+console.log(`15 / ${5} = ${15 / 5}`);
+console.log(`20 / ${5} = ${20 / 5}`);
+console.log(`25 / ${5} = ${25 / 5}`);
+console.log(`30 / ${5} = ${30 / 5}`);
+console.log(`35 / ${5} = ${35 / 5}`);
+console.log(`40 / ${5} = ${40 / 5}`);
+console.log(`45 / ${5} = ${45 / 5}`);
+console.log(`50 / ${5} = ${50 / 5}`);

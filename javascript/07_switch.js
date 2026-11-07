@@ -1,19 +1,19 @@
 let dimension = 4;
 switch (dimension) {
     case 1:
-        console.log("Estas en la dimensión C-137");
+        console.log("Estás en la dimensión C-137");
         break;
     case 2:
-        console.log("Estas en la dimensión C-140");
+        console.log("Estás en la dimensión C-140");
         break;
     case 3:
-        console.log("Estas en la dimensión C-500");
+        console.log("Estás en la dimensión C-500");
         break;
     case 4:
-        console.log("Estas en la dimensión de Alejandro");
+        console.log("Estás en la dimensión de Alejandro");
         break;
     default:
-        console.log("No se que dimensión es esa");
+        console.log("No sé qué dimensión es esa");
 }
 
 let personaje = "Rick";
@@ -31,7 +31,7 @@ switch (personaje) {
 
 let energia = 50;
 switch (true) {
-    case (energia > 0 && energia <= 25):
+    case (energia >= 0 && energia <= 25):
         console.log("Tienes poca energía para la aventura.");
         break;
     case (energia > 25 && energia <= 50):
@@ -40,11 +40,11 @@ switch (true) {
     case (energia > 50 && energia <= 75):
         console.log("Tienes suficiente energía para la aventura.");
         break;
-    case (energia > 75  && energia <= 100):
+    case (energia > 75 && energia <= 100):
         console.log("Tu energía es alta, ¡ten cuidado!");
         break;
     default:
-        console.log("No tienes suficiente energía para continuar la aventura.");
+        console.log("Nivel de energía fuera de rango.");
 }
 
 console.log("Calculadora");

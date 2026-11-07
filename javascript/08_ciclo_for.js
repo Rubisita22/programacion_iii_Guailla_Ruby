@@ -6,7 +6,7 @@ for (let i = 1; i <= 5; i++) {
 
 console.log("Fin del ciclo For");   
 
-console.log("Cuenta regresiva despegue de la nave de Morty con mensaje fianl");
+console.log("Cuenta regresiva despegue de la nave de Morty con mensaje final");
 for (let i = 10; i >= 0; i--) {
     if (i === 0) {
         console.log("¡Despegue de la nave de Morty!");
@@ -15,10 +15,10 @@ for (let i = 10; i >= 0; i--) {
     }
 }
 
-console.log("Nivel de energia Rick")
+console.log("Nivel de energía Rick");
 let energia = 50;
 for (let i = 0; i <= 100; i += 10) {
-    if (energia + i > 100) {
+    if (energia + i <= 100) {
         console.log("Nivel de energía actual: " + (energia + i) + "%");
     }
 }
@@ -27,25 +27,24 @@ let consumoPorViaje = 10;
 let totalConsumido = 0;
 for (let viaje = 1; viaje <= 5; viaje++) {
     totalConsumido += consumoPorViaje;
-    console.log("Viaje" + viaje);
-    console.log ("totalConsumido" + totalConsumido + "unidade de combustible");
-
+    console.log("Viaje " + viaje);
+    console.log("totalConsumido " + totalConsumido + " unidades de combustible");
 }
-console.log("Total consumido:"+ totalConsumido + " unidades");
+console.log("Total consumido: " + totalConsumido + " unidades");
 
-console. log("Promedio de los cristales");
+console.log("Promedio de los cristales");
 let totalCristales = 0;
 let dias = 7;
 for (let dia = 1; dia <= dias; dia++) {
-    let cristales = dia *5+5;
+    let cristales = dia * 5 + 5;
     totalCristales += cristales;
-    console.log("Día " + dia + ": "+ cristales + "cristales recdolectados");
+    console.log("Día " + dia + ": " + cristales + " cristales recolectados");
 }
 
-console.log ("Total de cristales recolectados:" + totalCristales);
-console.log("Promedio de cristales por dia"+ (totalCristales/dias).toFixed(2));
+console.log("Total de cristales recolectados: " + totalCristales);
+console.log("Promedio de cristales por día: " + (totalCristales / dias).toFixed(2));
 
-console.log("Dimensions Peligrosas");
+console.log("Dimensiones Peligrosas");
 let seguras = 0;
 let peligrosas = 0;
 for (let dimension = 1; dimension <= 10; dimension++) {
@@ -60,24 +59,27 @@ for (let dimension = 1; dimension <= 10; dimension++) {
 console.log("Total de dimensiones seguras: " + seguras);
 console.log("Total de dimensiones peligrosas: " + peligrosas);
 
-console.log("Recoleccion de Cristales de Morty");
-let cristalesRecolectados = [35,60,45,80,20,90,55];
+console.log("Recolección de Cristales de Morty");
+let cristalesRecolectados = [35, 60, 45, 80, 20, 90, 55];
 let total = 0;
+let viajesExitosos = 0;
 for (let i = 0; i < cristalesRecolectados.length; i++) {
     total += cristalesRecolectados[i];
+    if (cristalesRecolectados[i] >= 50) {
+        viajesExitosos++;
+    }
     console.log("Día " + (i + 1) + ": " + cristalesRecolectados[i] + " cristales recolectados");
 }
 console.log("Total de cristales recolectados: " + total);
-console.log("Numero de viajes exitossos: " + viajesExitosos);
+console.log("Número de viajes exitosos: " + viajesExitosos);
 
-
-console.log("Recorrer Personajs con for ...of")
+console.log("Recorrer Personajes con for ...of");
 const personajes = ["Rick", "Morty", "Summer", "Beth", "Jerry"];
 for (let personaje of personajes) {
     console.log("Personaje: " + personaje);
 }
 
-let nave= {
+let nave = {
     nombre: "Nave de Rick",
     combustible: 100,
     velocidad: 500,

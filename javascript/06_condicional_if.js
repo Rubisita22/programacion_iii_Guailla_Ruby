@@ -15,9 +15,9 @@ console.log("Resultados de la misión:");
 
 if (porcentajeCumplimiento >= 90) {
     console.log("Misión cumplida con éxito");
-} else if (porcentajeCumplimiento > 70 && porcentajeCumplimiento < 90) {
+} else if (porcentajeCumplimiento >= 70) {
     console.log("Misión cumplida parcialmente");
-} else if (porcentajeCumplimiento > 50 && porcentajeCumplimiento <= 70) {
+} else if (porcentajeCumplimiento >= 50) {
     console.log("Misión regular, se requiere mejorar");
 } else {
     console.log("Misión fallida");
