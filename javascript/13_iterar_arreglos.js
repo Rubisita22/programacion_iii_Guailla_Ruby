@@ -1,67 +1,70 @@
-let cristales = [30, 50, 70, 40];
+let cargas = [30, 50, 70, 40];
 let posicion = 2;
-let nuevaEnergia = 100;
+let nuevaCarga = 100;
 
-if (posicion >= 0 && posicion < cristales.length) {
-    cristales[posicion] = nuevaEnergia;
+if (posicion >= 0 && posicion < cargas.length) {
+    cargas[posicion] = nuevaCarga;
 } else {
     console.log("Posicion no valida");
 }
 
-for (let i = 0; i < cristales.length; i++) {
+for (let i = 0; i < cargas.length; i++) {
     console.log("Posicion", i);
-    console.log("Cristal:", cristales[i]);
+    console.log("Carga:", cargas[i]);
 }
 
-console.log(cristales);
+console.log(cargas);
 
-let personajes = [
-    {id: 1, nombre: "Ruby", energia: 99, edad: 19},
-    {id: 2, nombre: "Guailla", energia: 99, edad: 19},
-    {id: 3, nombre: "Anabell", energia: 99, edad: 19},
+let operadores = [
+    { id: 1, nombre: "Ruby", eficiencia: 99, turno: 1 },
+    { id: 2, nombre: "Guailla", eficiencia: 99, turno: 2 },
+    { id: 3, nombre: "Anabell", eficiencia: 99, turno: 3 }
 ];
 
-for (let personaje of personajes) {
-    console.log("ID:", personaje.id);
-    console.log("Nombre:", personaje.nombre);
-    console.log("Energia:", personaje["energia"]);
-    console.log("Edad:", personaje["edad"]);
-};
+for (let operador of operadores) {
+    console.log("ID:", operador.id);
+    console.log("Nombre:", operador.nombre);
+    console.log("Eficiencia:", operador["eficiencia"]);
+    console.log("Turno:", operador["turno"]);
+}
 
-console.log("Rick organiza sus misiones");
-misiones = [
+console.log("Despacho organiza sus rutas");
+let rutas = [
     {
-        piloto: "Rick",
-        cristales: [30,50,60]
-
+        conductor: "Carlos Mendoza",
+        pasajeros: [30, 50, 60]
     },
     {
-        piloto: "Morty",
-        cristales: [20,30,30]
+        conductor: "Ana Torres",
+        pasajeros: [20, 30, 30]
     },
-{
-        piloto: "SUmmer",
-        cristales: [90,80,70]
-     }
-];
-
-for(let mision of misiones){
-    totalCristales=0;
-    console.log("Piloto:", mision.piloto);
-    for (let cristal of mision.cristales){
-        console.log("Cristales Recolectados", cristal);
-        totalCristales
+    {
+        conductor: "Luis Paredes",
+        pasajeros: [90, 80, 70]
     }
-    console.log("Total Cristales Recolectados por", mision.piloto,"son:", totalCristales);
+];
+
+for (let ruta of rutas) {
+    let totalPasajeros = 0;
+    console.log("Conductor:", ruta.conductor);
+    for (let cantidad of ruta.pasajeros) {
+        console.log("Pasajeros en tramo", cantidad);
+        totalPasajeros += cantidad;
+    }
+    console.log("Total pasajeros transportados por", ruta.conductor, "son:", totalPasajeros);
 }
 
-let cristalesOriginales = [30,50,70,40];
-let cristalesDobles =cristalesOriginales.map(elemento=>{
-    return elemento*2;
+let pasajerosOriginales = [30, 50, 70, 40];
+let pasajerosProyectados = pasajerosOriginales.map(elemento => {
+    return elemento * 2;
 });
 
-console.log(cristalesDobles);
-let validos = cristalesOriginales.filter(cristal=> cristal>=50);
-let resultado=cristalesOriginales.reduce((acumulador,elemento)=>{
-    return acumulador+elemento;
-});
+console.log(pasajerosProyectados);
+
+let validos = pasajerosOriginales.filter(viaje => viaje >= 50);
+console.log("Viajes validos:", validos);
+
+let resultado = pasajerosOriginales.reduce((acumulador, elemento) => {
+    return acumulador + elemento;
+}, 0);
+console.log("Total acumulado:", resultado);
