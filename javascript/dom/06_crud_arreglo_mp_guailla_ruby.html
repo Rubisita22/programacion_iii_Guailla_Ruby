@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Flota y Rutas</title>
+    <script src="06_crud_arreglo_mp_guailla_ruby.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Unidades de Transporte</h1>
+    <h2 id="tituloFormulario">Registro de Unidad</h2>
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Código o nombre de la unidad">
+        <select id="dimension">
+            <option value="Troncal Central">Troncal Central</option>
+            <option value="Corredor Norte">Corredor Norte</option>
+            <option value="Alimentador Sur">Alimentador Sur</option>
+        </select>
+        <select id="estado">
+            <option value="En Ruta">En Ruta</option>
+            <option value="En Mantenimiento">En Mantenimiento</option>
+            <option value="Fuera de Servicio">Fuera de Servicio</option>
+        </select>
+        <button type="submit" id="guardar">Agregar</button>
+        <button type="button" id="cancelar" hidden>Cancelar</button>
+    </form>
+    <h2>Unidades Registradas</h2>
+    <h2 id="cantidad">Cantidad</h2>
+    <div id="contenedor"></div>
+</body>
+</html>
